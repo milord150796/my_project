@@ -1,15 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <PageHeader/>
+  <MainContent/>
+  <CardDonat/>
+  <PageFooter/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PageHeader from './components/PageHeader.vue'
+import PageFooter from './components/PageFooter.vue'
+import MainContent from './components/MainContent.vue'
+import CardDonat from './components/CardDonat.vue'
+
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  components: { 
+    PageHeader,
+    PageFooter,
+    MainContent,
+    CardDonat
   }
 }
 </script>
@@ -21,6 +30,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
