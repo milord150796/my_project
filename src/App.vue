@@ -3,6 +3,8 @@
   <PageHeader/>
   <MainContent/>
   <CardDonat/>
+  <AnimeVideo/>
+  <FeedbackPage/>
   <PageFooter/>
 </template>
 
@@ -12,8 +14,8 @@ import PageFooter from './components/PageFooter.vue'
 import MainContent from './components/MainContent.vue'
 import CardDonat from './components/CardDonat.vue'
 import Backgraund from './components/Backgraund.vue'
-
-
+import FeedbackPage from './components/FeedbackPage.vue'
+import AnimeVideo from './components/AnimeVideo.vue'
 
 export default {
   name: 'App',
@@ -22,7 +24,9 @@ export default {
     PageHeader,
     PageFooter,
     MainContent,
-    CardDonat
+    CardDonat,
+    FeedbackPage,
+    AnimeVideo
   }
 }
 </script>
