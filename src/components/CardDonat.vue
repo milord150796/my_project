@@ -177,7 +177,7 @@
     font-size: 16px;
     transition: background-color 0.3s ease;
     margin-bottom: 20px;
-  }
+    }
   
   .red-button:hover {
     background-color: #c0392b;
@@ -193,16 +193,46 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 3;
   }
   
-  .modal {
+  /* .modal {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
     position: relative;
     width: 400px;
+  } */
+
+  .modal {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  width: 400px;
+  color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  animation: gradient-animation 10s ease infinite;
+}
+
+/* Анімація для плавного переливання кольорів */
+@keyframes gradient-animation {
+  0% {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
   }
+  33% {
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+  }
+  66% {
+    background: linear-gradient(135deg, #ff4e50, #f9d423); /* Без оранжевих відтінків */
+  }
+  100% {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+  }
+}
+
   
   .close-button {
     position: absolute;

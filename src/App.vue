@@ -1,4 +1,5 @@
 <template>
+  <Backgraund/>
   <PageHeader/>
   <MainContent/>
   <CardDonat/>
@@ -10,11 +11,14 @@ import PageHeader from './components/PageHeader.vue'
 import PageFooter from './components/PageFooter.vue'
 import MainContent from './components/MainContent.vue'
 import CardDonat from './components/CardDonat.vue'
+import Backgraund from './components/Backgraund.vue'
+
 
 
 export default {
   name: 'App',
   components: { 
+    Backgraund,
     PageHeader,
     PageFooter,
     MainContent,
@@ -24,6 +28,12 @@ export default {
 </script>
 
 <style>
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
