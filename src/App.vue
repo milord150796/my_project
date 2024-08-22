@@ -5,6 +5,8 @@
   <CardDonat />
   <AnimeVideo />
   <FeedbackPage />
+  <Lazer/>
+  <CoffeKava/>
   <PageFooter />
 </template>
 
@@ -16,6 +18,9 @@ import CardDonat from './components/CardDonat.vue'
 import Backgraund from './components/Backgraund.vue'
 import FeedbackPage from './components/FeedbackPage.vue'
 import AnimeVideo from './components/AnimeVideo.vue'
+import CoffeKava from './components/CoffeKava.vue'
+import Lazer from './components/Lazer.vue'
+
 
 export default {
   name: 'App',
@@ -26,7 +31,9 @@ export default {
     MainContent,
     CardDonat,
     FeedbackPage,
-    AnimeVideo
+    AnimeVideo,
+    CoffeKava,
+    Lazer
   }
 }
 </script>
@@ -47,7 +54,6 @@ export default {
   position: relative;
   width: 100%;
   height: 100vh;
-  /* overflow: hidden; */
   background: linear-gradient(120deg, #a1c4fd, #c2e9fb, #a1c4fd);
   background-size: 200% 200%;
   animation: gradientAnimation 12s ease infinite;
